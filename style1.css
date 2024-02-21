@@ -6,17 +6,25 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ddd;
+    background: url("img/bg.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
 }
 
+h2, h3{
+    color: rgb(2, 140, 194);
+}
+
 /*Latihan 1*/
 .rootFlex{
     width: 800px;
-    background-color: #fff;
+    background: url("img/bg.jpg");
+    box-shadow: 0px 0px 10px 5px rgba(193, 193, 193, 0.669);
+
     display: flex;
     align-items: flex-start;
     justify-content: center;

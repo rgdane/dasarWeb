@@ -26,7 +26,7 @@ if($aksi == "tambah") {
             header("Location: index.php");
             exit();
         } else {
-            echo "Gaga; mengupdate data : " . mysqli_error($conn);
+            echo "Gagal mengupdate data : " . mysqli_error($conn);
         }
     } else {
         echo "ID tidak valid";

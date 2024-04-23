@@ -19,7 +19,7 @@
     if ($salt !== null && $hashed_password !== null) {
         $combined_password = $salt . $password;
 
-        if ($password == $hashed_password) {
+        if (password_verify($combined_password, $hashed_password)) {
             $_SESSION['username'] = $row['username'];
             $_SESSION['level'] = $row['level'];
             header("Location: index.php");
